@@ -6,7 +6,7 @@ exports.config = {
     output: `${process.cwd()}/${config.TestOutputDir}`,
     async bootstrap() {
         config.CCDCaseId = await createCaseInCcd('src/test/end-to-end/data/ccd-case-basic-data.json');
-        return config.CCDCaseId;
+        config.MOCase = await createCaseInCcd('src/test/end-to-end/data/ccd-case-manchester-data.json', 'Manchester');
     },
     helpers: {
         Puppeteer: {
@@ -82,7 +82,7 @@ exports.config = {
     },
     multiple: {
         parallel: {
-            chunks: 2,
+            chunks: 3,
             browsers: ['chrome']
         }
     },
