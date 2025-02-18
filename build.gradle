@@ -221,7 +221,7 @@ repositories {
 }
 
 ext {
-    junitJupiterVersion = '5.10.3'
+    junitJupiterVersion = '5.11.4'
     log4JVersion = '2.23.1'
     serenity = '3.9.8'
     tomcatEmbedVersion = '9.0.98'
@@ -298,7 +298,7 @@ dependencies {
     implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '7.4'
     implementation group: 'org.apache.xmlgraphics', name: 'batik-all', version: '1.18', ext: 'pom'
     implementation group: 'org.apache.xmlgraphics', name: 'xmlgraphics-commons', version: '2.10'
-    implementation group: 'org.yaml', name: 'snakeyaml', version: '2.3'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '2.4'
 
     implementation('org.elasticsearch:elasticsearch') {
         version {
@@ -347,7 +347,7 @@ dependencies {
     contractTestImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitJupiterVersion
     contractTestRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitJupiterVersion
     contractTestImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitJupiterVersion
-    contractTestRuntimeOnly group: 'org.junit.platform', name: 'junit-platform-commons', version: '1.10.3'
+    contractTestRuntimeOnly group: 'org.junit.platform', name: 'junit-platform-commons', version: '1.11.4'
     contractTestImplementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '4.1.2'
     contractTestImplementation group: 'org.springframework.cloud', name: 'spring-cloud-netflix-ribbon', version: '2.2.10.RELEASE'
     contractTestImplementation sourceSets.main.runtimeClasspath
