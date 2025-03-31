@@ -106,7 +106,7 @@ public class MigrateToReformHelper {
         reformCaseData.setNextListedDate(caseData.getNextListedDate());
         reformCaseData.setReceiptDate(caseData.getReceiptDate());
         reformCaseData.setEcmFeeGroupReference(caseData.getFeeGroupReference());
-        reformCaseData.setPositionType(caseData.getPositionType());
+        reformCaseData.setPositionType(getPositionType(caseData.getPositionType()));
         reformCaseData.setCaseNotes(caseData.getCaseNotes());
         reformCaseData.setConciliationTrack(caseData.getConciliationTrack());
         reformCaseData.setPreAcceptCase(
@@ -174,6 +174,14 @@ public class MigrateToReformHelper {
         reformCaseData.setClaimantHearingPreference((ClaimantHearingPreference)
                 objectMapper(caseData.getClaimantHearingPreference(), ClaimantHearingPreference.class));
         return reformCaseData;
+    }
+
+    private static String getPositionType(String positionType) {
+        if (isNullOrEmpty(positionType) || "Case transferred to Reform ECM".equals(positionType)) {
+            return null;
+        } else {
+            return positionType;
+        }
     }
 
     private static List<HearingTypeItem> convertHearingCollection(
@@ -357,6 +365,9 @@ public class MigrateToReformHelper {
 
     private static ClaimantIndType convertClaimantIndtype(
             uk.gov.hmcts.ecm.common.model.ccd.types.ClaimantIndType claimantIndType) {
+        if (ObjectUtils.isEmpty(claimantIndType)) {
+            return null;
+        }
         ClaimantIndType reformClaimantIndType = new ClaimantIndType();
         reformClaimantIndType.setClaimantFirstNames(claimantIndType.getClaimantFirstNames());
         reformClaimantIndType.setClaimantLastName(claimantIndType.getClaimantLastName());
@@ -383,10 +394,17 @@ public class MigrateToReformHelper {
         return reformClaimantIndType;
     }
 
+    /**
+     * Convert the document collection from ECM to Reform. If the document type is empty, set it to "Needs updating".
+     * @param documentCollection The document collection from ECM
+     * @return The document collection for Reform
+     */
     private static List<DocumentTypeItem> convertCaseDataDocumentCollection(
             List<uk.gov.hmcts.ecm.common.model.ccd.items.DocumentTypeItem> documentCollection) {
+
         return emptyIfNull(documentCollection).stream()
-                .map(doc -> (DocumentTypeItem) objectMapper(doc, DocumentTypeItem.class)).toList();
+                .map(doc -> (DocumentTypeItem) objectMapper(doc, DocumentTypeItem.class))
+                .toList();
     }
 
     private static Address addressMapper(uk.gov.hmcts.ecm.common.model.ccd.Address ecmAddress) {
