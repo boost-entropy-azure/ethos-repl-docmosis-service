@@ -42,7 +42,7 @@ jacocoTestCoverageVerification {
 
 checkstyle {
     maxWarnings = 1927
-    toolVersion = '10.26.1'
+    toolVersion = '11.0.0'
     getConfigDirectory().set(new File(rootDir, 'config/checkstyle'))
 }
 
@@ -236,7 +236,7 @@ ext {
     junitJupiterVersion = '5.11.4'
     log4JVersion = '2.25.1'
     serenity = '3.9.8'
-    tomcatEmbedVersion = '9.0.107'
+    tomcatEmbedVersion = '9.0.108'
     springCloudVersion = '2021.0.9'
 }
 
@@ -309,7 +309,7 @@ dependencies {
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.13'
     implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.2.13'
     implementation group: 'ch.qos.logback', name: 'logback-access', version: '1.4.14'
-    implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '7.4'
+    implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '8.1'
     implementation group: 'org.apache.xmlgraphics', name: 'batik-all', version: '1.19', ext: 'pom'
     implementation group: 'org.apache.xmlgraphics', name: 'xmlgraphics-commons', version: '2.11'
     implementation group: 'org.yaml', name: 'snakeyaml', version: '2.4'
@@ -328,7 +328,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'org.springframework.retry:spring-retry'
     implementation group: 'org.webjars.npm', name: 'minimatch', version: '9.0.5'
-    implementation group: 'org.asynchttpclient', name: 'async-http-client', version: '2.12.4'
+    implementation group: 'org.asynchttpclient', name: 'async-http-client', version: '3.0.2'
     implementation group: 'org.asynchttpclient', name: 'async-http-client-netty-utils', version: '2.12.4'
     implementation group: 'io.netty', name: 'netty-transport-classes-epoll', version: '4.2.3.Final'
     implementation group: 'io.netty', name: 'netty-transport-classes-kqueue', version: '4.2.3.Final'
