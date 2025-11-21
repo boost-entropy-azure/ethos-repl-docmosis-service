@@ -3658,11 +3658,11 @@ __metadata:
     cross-env: 10.0.0
     eslint-plugin-mocha: 11.1.0
     html_codesniffer: 2.5.1
-    mocha: 11.7.1
+    mocha: 11.7.5
     mocha-jenkins-reporter: 0.4.8
     mocha-junit-reporter: 2.2.1
     mocha-multi: 1.1.7
-    mochawesome: 7.1.3
+    mochawesome: 7.1.4
     nock: 14.0.10
     node-fetch: 3.3.2
     nodemon: 3.1.10
@@ -5470,6 +5470,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-path-inside@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "is-path-inside@npm:3.0.3"
+  checksum: abd50f06186a052b349c15e55b182326f1936c89a78bf6c8f2b707412517c097ce04bc49a0ca221787bc44e1049f51f09a2ffb63d22899051988d3a618ba13e9
+  languageName: node
+  linkType: hard
+
 "is-plain-obj@npm:^2.1.0":
   version: 2.1.0
   resolution: "is-plain-obj@npm:2.1.0"
@@ -6946,37 +6953,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mocha@npm:11.7.1":
-  version: 11.7.1
-  resolution: "mocha@npm:11.7.1"
-  dependencies:
-    browser-stdout: ^1.3.1
-    chokidar: ^4.0.1
-    debug: ^4.3.5
-    diff: ^7.0.0
-    escape-string-regexp: ^4.0.0
-    find-up: ^5.0.0
-    glob: ^10.4.5
-    he: ^1.2.0
-    js-yaml: ^4.1.0
-    log-symbols: ^4.1.0
-    minimatch: ^9.0.5
-    ms: ^2.1.3
-    picocolors: ^1.1.1
-    serialize-javascript: ^6.0.2
-    strip-json-comments: ^3.1.1
-    supports-color: ^8.1.1
-    workerpool: ^9.2.0
-    yargs: ^17.7.2
-    yargs-parser: ^21.1.1
-    yargs-unparser: ^2.0.0
-  bin:
-    _mocha: bin/_mocha
-    mocha: bin/mocha.js
-  checksum: 8779acc0a00083078de4c53dd4be25a8655053ae05107983470f67f560ca17711f9039c13fced6cd0bd0211939ab8dd1d29ec4b6ec3e2dd18f986c8b9955d440
-  languageName: node
-  linkType: hard
-
 "mocha@npm:11.7.2":
   version: 11.7.2
   resolution: "mocha@npm:11.7.2"
@@ -7008,45 +6984,76 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mochawesome-report-generator@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "mochawesome-report-generator@npm:6.2.0"
+"mocha@npm:11.7.5":
+  version: 11.7.5
+  resolution: "mocha@npm:11.7.5"
   dependencies:
-    chalk: "npm:^4.1.2"
-    dateformat: "npm:^4.5.1"
-    escape-html: "npm:^1.0.3"
-    fs-extra: "npm:^10.0.0"
-    fsu: "npm:^1.1.1"
-    lodash.isfunction: "npm:^3.0.9"
-    opener: "npm:^1.5.2"
-    prop-types: "npm:^15.7.2"
-    tcomb: "npm:^3.2.17"
-    tcomb-validation: "npm:^3.3.0"
-    validator: "npm:^13.6.0"
-    yargs: "npm:^17.2.1"
+    browser-stdout: ^1.3.1
+    chokidar: ^4.0.1
+    debug: ^4.3.5
+    diff: ^7.0.0
+    escape-string-regexp: ^4.0.0
+    find-up: ^5.0.0
+    glob: ^10.4.5
+    he: ^1.2.0
+    is-path-inside: ^3.0.3
+    js-yaml: ^4.1.0
+    log-symbols: ^4.1.0
+    minimatch: ^9.0.5
+    ms: ^2.1.3
+    picocolors: ^1.1.1
+    serialize-javascript: ^6.0.2
+    strip-json-comments: ^3.1.1
+    supports-color: ^8.1.1
+    workerpool: ^9.2.0
+    yargs: ^17.7.2
+    yargs-parser: ^21.1.1
+    yargs-unparser: ^2.0.0
   bin:
-    marge: bin/cli.js
-  checksum: bbfafc781a5b5aa39a012e0bed7d50ac929f72a46dee640223e4398b5f2121bd552a58f1dd481c0133678650a2e4730a9f97b8a5f26f2956b66b5c0057eb9391
+    _mocha: bin/_mocha
+    mocha: bin/mocha.js
+  checksum: cdd0c29b4c86472dce7a3e476c3f6ea31e15ce2b11a65aa7e82261512a9b8aaa3f91b6276347d165a7e22361ba45ac535ef8e88bbacd54387cba37ba98a0a0f5
   languageName: node
   linkType: hard
 
-"mochawesome@npm:7.1.3":
-  version: 7.1.3
-  resolution: "mochawesome@npm:7.1.3"
+"mochawesome-report-generator@npm:^6.3.0":
+  version: 6.3.2
+  resolution: "mochawesome-report-generator@npm:6.3.2"
   dependencies:
-    chalk: "npm:^4.1.2"
-    diff: "npm:^5.0.0"
-    json-stringify-safe: "npm:^5.0.1"
-    lodash.isempty: "npm:^4.4.0"
-    lodash.isfunction: "npm:^3.0.9"
-    lodash.isobject: "npm:^3.0.2"
-    lodash.isstring: "npm:^4.0.1"
-    mochawesome-report-generator: "npm:^6.2.0"
-    strip-ansi: "npm:^6.0.1"
-    uuid: "npm:^8.3.2"
+    chalk: ^4.1.2
+    dateformat: ^4.5.1
+    escape-html: ^1.0.3
+    fs-extra: ^10.0.0
+    fsu: ^1.1.1
+    lodash.isfunction: ^3.0.9
+    opener: ^1.5.2
+    prop-types: ^15.7.2
+    tcomb: ^3.2.17
+    tcomb-validation: ^3.3.0
+    yargs: ^17.2.1
+  bin:
+    marge: bin/cli.js
+  checksum: ce7ad1c4dc6ccabd4e7edff1859da65965541e49a5407ed68d1e680e7f24284fd3ffc5d41422382cd247e00359c3639775970e8217ffaed54b4e0607f1ec2d49
+  languageName: node
+  linkType: hard
+
+"mochawesome@npm:7.1.4":
+  version: 7.1.4
+  resolution: "mochawesome@npm:7.1.4"
+  dependencies:
+    chalk: ^4.1.2
+    diff: ^5.0.0
+    json-stringify-safe: ^5.0.1
+    lodash.isempty: ^4.4.0
+    lodash.isfunction: ^3.0.9
+    lodash.isobject: ^3.0.2
+    lodash.isstring: ^4.0.1
+    mochawesome-report-generator: ^6.3.0
+    strip-ansi: ^6.0.1
+    uuid: ^8.3.2
   peerDependencies:
     mocha: ">=7"
-  checksum: 87730026de2a407752088e9baddc105660bfd228d491f9f6588784cd7a200712b40a4987232d3870a353bb5deec61ae6e080686fb2effe099da240067fe619d6
+  checksum: e7ed98f3fda3d779a0474ba2b27faab0a63f1880d8413c49f98b551d262fa693019934769dbc33fbd0a82f8176795862967c6ab5bb8bbbf5e8f92e2b0845eb57
   languageName: node
   linkType: hard
 
@@ -9991,13 +9998,6 @@ __metadata:
     spdx-correct: "npm:^3.0.0"
     spdx-expression-parse: "npm:^3.0.0"
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
-  languageName: node
-  linkType: hard
-
-"validator@npm:^13.6.0":
-  version: 13.15.20
-  resolution: "validator@npm:13.15.20"
-  checksum: e8e50470acbc65206fad8ac937cc692278201bb09558176a4100b90cbc7981c475eda69f49b91aee3ae04cff474c8478f672f9c641e4e0a38a9f47371e0fdfb2
   languageName: node
   linkType: hard
 
