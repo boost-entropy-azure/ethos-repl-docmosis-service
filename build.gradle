@@ -242,7 +242,7 @@ ext {
     log4JVersion = '2.25.1'
     serenity = '3.9.8'
     tomcatEmbedVersion = '10.1.49'
-    springCloudVersion = '2023.0.4'
+    springCloudVersion = '2023.0.6'
 }
 
 ext["rest-assured.version"] = '5.1.0'
@@ -325,7 +325,7 @@ dependencies {
             strictly '7.17.3'
         }
     }
-    implementation 'org.postgresql:postgresql:42.7.7'
+    implementation 'org.postgresql:postgresql:42.7.8'
     implementation group: 'org.slf4j', name: 'slf4j-ext', version: '2.0.17'
     implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.5.0'
     implementation 'org.springframework.boot:spring-boot-configuration-processor'
@@ -342,7 +342,7 @@ dependencies {
     implementation group: 'org.asynchttpclient', name: 'async-http-client', version: '3.0.4'
     implementation group: 'org.asynchttpclient', name: 'async-http-client-netty-utils', version: '2.12.4'
 
-    implementation group: 'org.springframework.security', name: 'spring-security-crypto', version: '6.5.3'
+    implementation group: 'org.springframework.security', name: 'spring-security-crypto', version: '6.5.7'
     implementation group: 'com.fasterxml.woodstox', name: 'woodstox-core', version: '7.1.1'
     implementation group: 'com.squareup.okio', name: 'okio', version: '3.16.4'
     compileOnly 'org.projectlombok:lombok'
