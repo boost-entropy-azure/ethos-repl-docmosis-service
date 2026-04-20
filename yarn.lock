@@ -1929,14 +1929,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.15.0":
-  version: 1.15.0
-  resolution: "axios@npm:1.15.0"
+"axios@npm:1.15.1":
+  version: 1.15.1
+  resolution: "axios@npm:1.15.1"
   dependencies:
     follow-redirects: ^1.15.11
     form-data: ^4.0.5
     proxy-from-env: ^2.1.0
-  checksum: 95a8455554867a083ab3772fcadba42a22ec4bb546dccc66011556d837a07e544ae006675a30a5c43453f3e37e7c0982e934cec482c06b75abead2a2c157448a
+  checksum: 5195540056a14b54cb85aa0d22aa672afda6317dd36d4d04f4e257da935c9f27404fb5abc6dd07c9c5fd6489b9763b5623e2b2da926999015e82321119da71eb
   languageName: node
   linkType: hard
 
@@ -3686,7 +3686,7 @@ __metadata:
     mocha-junit-reporter: 2.2.1
     mocha-multi: 1.1.7
     mochawesome: 7.1.4
-    nock: 14.0.11
+    nock: 14.0.12
     node-fetch: 3.3.2
     nodemon: 3.1.14
     otp: 1.1.2
@@ -7220,14 +7220,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nock@npm:14.0.11":
-  version: 14.0.11
-  resolution: "nock@npm:14.0.11"
+"nock@npm:14.0.12":
+  version: 14.0.12
+  resolution: "nock@npm:14.0.12"
   dependencies:
     "@mswjs/interceptors": ^0.41.0
     json-stringify-safe: ^5.0.1
     propagate: ^2.0.0
-  checksum: 4250a91a7bcd3f93c5557c46acc689a6dc92f3f24929679a321488b68687ccb6fc66cdb4346d3f745bac3d16fb0fad7ac541948b0b81944959eba2a721c5ad87
+  checksum: f1194d75dae72f69f98f69575e1c5b77dc362d34bf24a79ff1b090b183b64978a522d10462d738db84b8c6b8633a9f6d7e471c9953da19e59d2e7eb30ed011ac
   languageName: node
   linkType: hard
 
