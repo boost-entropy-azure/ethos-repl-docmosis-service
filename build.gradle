@@ -280,7 +280,7 @@ ext["rest-assured.version"] = '5.1.0'
 dependencyManagement {
     dependencies {
         dependency 'org.apache.httpcomponents.core5:httpcore5:5.3.6'
-        dependencySet(group: 'com.google.guava', version: '33.4.8-jre') {
+        dependencySet(group: 'com.google.guava', version: '33.6.0-jre') {
             entry 'guava'
         }
         dependencySet(group: 'io.netty', version: '4.2.14.Final') {
@@ -344,7 +344,7 @@ dependencies {
 
     implementation group: 'com.github.hmcts', name: 'document-management-client', version: '7.0.1'
     implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '8.0.0'
-    implementation group: 'com.nimbusds', name: 'nimbus-jose-jwt', version: '10.4.2'
+    implementation group: 'com.nimbusds', name: 'nimbus-jose-jwt', version: '10.9.1'
     implementation group: 'commons-io', name: 'commons-io', version: '2.20.0'
     implementation group: 'org.apache.commons', name: 'commons-compress', version: '1.28.0'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.18.0'
@@ -389,7 +389,7 @@ dependencies {
     implementation group: 'org.asynchttpclient', name: 'async-http-client-netty-utils', version: '2.12.4'
 
     implementation group: 'org.springframework.security', name: 'spring-security-crypto', version: '6.5.10'
-    implementation group: 'com.fasterxml.woodstox', name: 'woodstox-core', version: '7.1.1'
+    implementation group: 'com.fasterxml.woodstox', name: 'woodstox-core', version: '7.2.0'
     implementation group: 'com.squareup.okio', name: 'okio', version: '3.16.4'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
